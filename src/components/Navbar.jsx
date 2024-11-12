@@ -23,7 +23,7 @@ const Navbar = ({ darkMode, toggleDarkMode }) => {
             >
               <div className="flex justify-center items-center">
                 <img src={logo} alt="" />
-                Eco<span className="text-[#2A60AD]">Shere</span>
+                Eco<span className="text-[#2A60AD]">Sphere</span>
               </div>
             </Link>
           </div>
