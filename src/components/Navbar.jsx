@@ -7,7 +7,7 @@ const Navbar = ({ darkMode, toggleDarkMode }) => {
   const location = useLocation();
 
   const navLinks = [
-    { path: "/articles", label: "Articles" },
+    { path: "/", label: "Articles" },
     { path: "/calculator", label: "Carbon Calculator" },
     { path: "/extinct", label: "Extinct Species" },
   ];
