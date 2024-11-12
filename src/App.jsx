@@ -26,8 +26,7 @@ function App() {
         <Navbar darkMode={darkMode} toggleDarkMode={() => setDarkMode(!darkMode)} />
         <main className="container mx-auto px-4 pt-20">
           <Routes>
-            <Route path="/" element={<Navigate to="/articles" replace />} />
-            <Route path="/articles" element={<Articles />} />
+            <Route path="/" element={<Articles />} />
             <Route path="/calculator" element={<CarbonCalculator />} />
             <Route path="/extinct" element={<ExtinctSpecies />} />
           </Routes>
