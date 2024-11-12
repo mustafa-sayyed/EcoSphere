@@ -19,7 +19,7 @@ const Articles = () => {
         setLoading(false);
       })
       .catch((err) => {
-        setError('Failed to load articles');
+        setError('Failed to load articles', err);
         setLoading(false);
       });
   }, []);
