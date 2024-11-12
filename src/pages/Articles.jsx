@@ -8,7 +8,7 @@ const Articles = () => {
 
   useEffect(() => {
     fetch(
-      "https://newsapi.org/v2/everything?q=biodiversity&sortBy=publishedAt&apiKey=e76b0771f50a42d28a10448d2b28dbe5"
+      "https://newsapi.org/v2/everything?q=biodiversity&sortBy=popularity&apiKey=02d409cdeb60404c9e39a89686c7dd47"
     )
       .then((res) => {
         if (!res.ok) throw new Error('Failed to fetch articles');
@@ -19,7 +19,7 @@ const Articles = () => {
         setLoading(false);
       })
       .catch((err) => {
-        setError('Failed to load articles', err);
+        setError('Failed to load articles');
         setLoading(false);
       });
   }, []);
